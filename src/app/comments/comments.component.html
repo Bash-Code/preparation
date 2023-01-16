@@ -1,0 +1,7 @@
+<div>
+  <input type="text" [(ngModel)]="Comment"/>
+  <button type="submit"(click)="CommentOnMovie()">Post Comment</button>
+  <div *ngFor="let comment of comments; let i = index;">
+    {{ comment['comment'] }}
+  </div>
+</div>

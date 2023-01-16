@@ -1,0 +1,20 @@
+<app-navbar-connected></app-navbar-connected>
+<div>
+  <h1>Movies</h1>
+  <div class="input-group">
+    <div class="form-outline">
+      <input type="search" id="form1" class="form-control"/>
+      <label class="form-label" for="form1">Search</label>
+    </div>
+  </div>
+</div>
+<div class="grid">
+  <div  *ngFor="let film of film; let i = index">
+    <div class="card" style="width: 18rem;">
+      <img src="{{getImage(film.poster_path)}}" class="card-img-top" alt="postera">
+      <div class="card-body">
+        <p class="card-text">{{film.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>
