@@ -1,6 +1,13 @@
 <app-navbar-connected></app-navbar-connected>
 <h1>Details</h1>
-<img src='https://image.tmdb.org/t/p/w500/{{film.poster_path}}'/>
-<h3>{{film.title}}</h3>
-<h3>{{film.overview}}</h3>
-<app-comments [film] = film></app-comments>
+<div class="film-detail-wrap">
+  <div class="film-image-wrap">
+    <img src='https://image.tmdb.org/t/p/w500/{{film.poster_path}}'/>
+  </div>
+  <div class="film-info-wrap">
+    <h3 class="film-title">{{film.title}}</h3>
+    <h3 class="film-overview">{{film.overview}}</h3>
+    <app-comments [film] = film></app-comments>
+  </div>
+</div>
+

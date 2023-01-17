@@ -1,12 +1,7 @@
 <app-navbar-connected></app-navbar-connected>
-<div>
-  <h1>Movies</h1>
-  <div class="input-group">
-    <div class="form-outline">
-      <input type="search" id="form1" class="form-control" [(ngModel)]="name" (ngModelChange)="onChange()"/>
-      <label class="form-label" for="form1">Search</label>
-    </div>
-  </div>
+<div class="search-container">
+  <input type="search" id="form1" class="form-control" [(ngModel)]="name" (ngModelChange)="onChange()"/>
+  <button class="fa fa-search" for="form1">Search</button>
 </div>
 <div class="grid">
   <div  *ngFor="let film of films; let i = index">

@@ -1,13 +1,8 @@
 <app-navbar></app-navbar>
-<div>
-  <h1>Movies</h1>
-  <div class="input-group">
-    <div class="form-outline">
+  <div class="search-container">
       <input type="search" id="form1" class="form-control" [(ngModel)]="name" (ngModelChange)="onChange()"/>
-      <label class="form-label" for="form1">Search</label>
-    </div>
+      <button class="fa fa-search" for="form1">Search</button>
   </div>
-</div>
 <div class="grid">
   <div  *ngFor="let film of films; let i = index">
     <app-film-item [film] = film  [routerLink]="['/details/'+film.id]"></app-film-item>

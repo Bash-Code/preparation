@@ -1,0 +1,26 @@
+.navbar-brand{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.btn{
+  background-color: #fff;
+  color: #333;
+  border-color: #333333;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+.container-fluid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #f2f2f2;
+}

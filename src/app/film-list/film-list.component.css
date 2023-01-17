@@ -1,5 +1,51 @@
 .grid{
+  background-color: mintcream;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
   grid-gap: 16px;
+}
+/* Search container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search input */
+input{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  width: 80%;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input:focus {
+  width: 90%;
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Search button */
+button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: #0093c9;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #fff;
+  color: #0093c9;
 }

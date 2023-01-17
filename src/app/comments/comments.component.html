@@ -1,7 +1,9 @@
-<div>
-  <input type="text" [(ngModel)]="Comment"/>
-  <button type="submit"(click)="CommentOnMovie()">Post Comment</button>
-  <div *ngFor="let comment of comments; let i = index;">
-    {{ comment['comment'] }}
+<div class="comment-section">
+  <input class="comment-input" type="text" [(ngModel)]="Comment"/>
+  <button class="submit-button" type="submit"(click)="CommentOnMovie()">Post Comment</button>
+  <div class="comments-display" *ngFor="let comment of comments; let i = index;">
+    <div class="comment">
+      <p class="comment-text"> {{ comment['comment'] }}</p>
+    </div>
   </div>
 </div>
